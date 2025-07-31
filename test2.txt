@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Rollercoaster Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Fun gradient background */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem; /* Padding for mobile */
+        }
+        .container-card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            max-width: 800px;
+            width: 100%;
+            padding: 2.5rem; /* Increased padding */
+            text-align: center;
+            animation: fadeIn 1s ease-out; /* Simple fade-in animation */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .cta-button {
+            background: linear-gradient(45deg, #FF6B6B 0%, #FFD166 100%); /* Vibrant button gradient */
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 9999px; /* Pill shape */
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 2rem;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
+        }
+        .list-item {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center content in list items */
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.125rem; /* Larger font for list items */
+            color: #4a5568; /* Slightly darker text for readability */
+        }
+        .list-icon {
+            color: #764ba2; /* Icon color matching gradient */
+            font-size: 1.5rem;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .container-card {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 2rem; /* Smaller on mobile */
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+            .list-item {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-card">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+            Ready for a creative rollercoaster? <span class="text-5xl sm:text-6xl">🎢</span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-600 mb-8">
+            My portfolio isn't just a collection of pixels, it's a playground of ideas waiting to inspire you.
+        </p>
+
+        <p class="text-lg sm:text-xl text-gray-700 mb-10 leading-relaxed">
+            Tired of the same old, same old? Good, because I am too! Dive into a world where imagination runs wild and creativity knows no bounds. From <strong class="text-indigo-600">mind-bending designs</strong> to <strong class="text-purple-600">story-driven illustrations</strong>, you'll find a little bit of everything that makes my brain tick.
+        </p>
+
+        <hr class="border-t-2 border-gray-200 my-8 w-24 mx-auto rounded-full">
+
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">
+            What You'll Find Inside:
+        </h2>
+        <ul class="mb-10">
+            <li class="list-item">
+                <span class="list-icon">✨</span> Projects that pop: See how I transform concepts into captivating visuals.
+            </li>
+            <li class="list-item">
+                <span class="list-icon">💡</span> A peek behind the process: Understand the thinking that goes into every piece.
+            </li>
+            <li class="list-item">
+                <span class="list-icon">🚀</span> Inspiration galore: Get ready to spark your own creative fire!
+            </li>
+        </ul>
+
+        <a href="#" class="cta-button">
+            Let's get creative! Explore my work <span class="ml-2">🚀</span>
+        </a>
+    </div>
+</body>
+</html>
